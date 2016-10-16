@@ -36,14 +36,28 @@
     <li><a data-toggle="tab" ng-click="scrollTo('nfl')">NFL</a></li>
   </ul>
     <br />
-    <div style="padding:10px">
-      <div id="home" ng-show="home"/>
-        Home
-        <hr />
-      </div>
-      <div id="epl"  ng-show="epl"/>
-        EPL
-        <hr />
+    <div style="padding:10px" class="container">
+      <div id="epl" ng-show="epl" class="row" style="padding:10px">
+        <div class="col-lg-6" >
+          <table class="table table-bordered">
+            <tr>
+              <td>Middlesbrough</td><td></td>
+            </tr>
+            <tr>
+              <td>Watford</td><td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6" >
+          <table class="table table-bordered">
+            <tr>
+              <td>Southampton</td><td></td>
+            </tr>
+            <tr>
+              <td>Burnley FC</td><td></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div id="mlb" ng-show="mlb"/>
         MLB
