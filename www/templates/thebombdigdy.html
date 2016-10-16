@@ -1,0 +1,46 @@
+<ion-view view-title="Profile">
+    <ion-content ng-class="{expanded:$scope.isExpanded}" delegate-handle="myPageDelegate">
+        <div class="hero slide-up"	style="background-image: url('img/login.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/novej_dp.jpg');"></div>
+                <h3><a class="light">Novej Panjawani</a></h3>
+                <h4>The Bomb Digdy</h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+
+            <a ui-sref="app.activity" class="tab-item">
+                <h5 style="color:white">32</h5> Points
+            </a>
+
+            <a ui-sref="app.activity" class="tab-item">
+                <h5 style="color:white">2</h5> Rank
+            </a>
+            <a ui-sref="app.activity" class="tab-item">
+                <h5 style="color:white">2</h5> Trophies
+            </a>
+        </div>
+
+        <div class="container">
+          <br />
+          <h3>Fixtures</h3>
+          <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" ng-click="scrollTo('home2')">Home</a></li>
+            <li><a data-toggle="tab" ng-click="scrollTo('epl')">EPL</a></li>
+          </ul>
+            <br />
+            <div style="padding:10px">
+              <div id="home" ng-show="home"/>
+                Home
+                <hr />
+              </div>
+              <div id="epl"  ng-show="epl"/>
+                EPL
+                <hr />
+              </div>
+
+          </div>
+
+</div>
+    </ion-content>
+</ion-view>
